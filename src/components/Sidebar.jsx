@@ -15,11 +15,6 @@ function Sidebar() {
   return (
     <Section>
       <div className="top">
-        {/* <div className="brand">
-          <BsCircleFill className="color1" />
-          <BsCircleFill className="color2" />
-          <BsCircleFill className="color3" />
-        </div> */}
         <div className="links">
           <ul>
             <li
@@ -43,32 +38,15 @@ function Sidebar() {
               onClick={() => setCurrentLink(3)}
             >
               <a href="#">
-                <AiOutlineFileText />
+                <BsCreditCard2Front />
               </a>
             </li>
             <li
               className={currentLink === 4 ? "active" : "none"}
               onClick={() => setCurrentLink(4)}
             >
-              <a href="#" className="noti">
-                <BsCreditCard2Front />
-                <span>2</span>
-              </a>
-            </li>
-            <li
-              className={currentLink === 5 ? "active" : "none"}
-              onClick={() => setCurrentLink(5)}
-            >
               <a href="#">
                 <AiOutlineTrophy />
-              </a>
-            </li>
-            <li
-              className={currentLink === 6 ? "active" : "none"}
-              onClick={() => setCurrentLink(6)}
-            >
-              <a href="#">
-                <AiOutlineDotChart />
               </a>
             </li>
           </ul>

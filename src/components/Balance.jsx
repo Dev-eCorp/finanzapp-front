@@ -17,17 +17,17 @@ function Balance() {
       <div className="sales">
         <div className="sales__details">
           <div>
-            <h4>Balance</h4>
+            <h4>Flujo de gastos e ingresos</h4>
           </div>
           <div>
-            <h5>ÚLTIMOS 30 DÍAS</h5>
+            <h5>ÚLTIMOS 6 MESES</h5>
           </div>
         </div>
         <div className="sales__graph">
           <ResponsiveContainer width="100%" height="150%">
             <BarChart
-              width={500}
-              height={300}
+              width={1100}
+              height={500}
               data={data}
               margin={{
                 top: 20,
@@ -41,8 +41,8 @@ function Balance() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="pv" stackId="a" fill="#14121F" />
-              <Bar dataKey="uv" stackId="a" fill="#E5E5F1" />
+              <Bar dataKey="gastos" stackId="a" fill="#DC143C" />
+              <Bar dataKey="ingresos" stackId="b" fill="#82ca9d" />
             </BarChart>
           </ResponsiveContainer>
         </div>
@@ -54,70 +54,34 @@ function Balance() {
 export default Balance;
 const data = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: "Julio",
+    ingresos: 3490,
+    gastos: 1300,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: "Agosto",
+    ingresos: 3490,
+    gastos: 4300,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: "Septiembre",
+    ingresos: 3490,
+    gastos: 4300,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: "Octubre",
+    ingresos: 4490,
+    gastos: 4300,
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    name: "Noviembre",
+    ingresos: 3490,
+    gastos: 4300,
   },
   {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    name: "Page H",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page I",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page J",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page K",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Diciembre",
+    ingresos: 3490,
+    gastos: 4300,
   },
 ];
 const Section = styled.section`

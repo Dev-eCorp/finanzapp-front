@@ -9,7 +9,7 @@ function Dashboard() {
     <Section>
       <div className="grid">
         <Navbar />
-        <Analytic />
+        {/* <Analytic /> */}
         <Balance />
         <History />
       </div>

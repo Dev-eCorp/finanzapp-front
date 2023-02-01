@@ -9,10 +9,6 @@ function Navbar() {
         <h1>Dashboard</h1>
         <h5>Actualizaciones de pagos</h5>
       </div>
-      <div className="search">
-        <BiSearch />
-        <input type="text" placeholder="Buscar" />
-      </div>
     </Nav>
   );
 }
